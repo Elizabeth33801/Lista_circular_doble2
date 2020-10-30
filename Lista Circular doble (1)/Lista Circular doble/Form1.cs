@@ -63,7 +63,13 @@ namespace Lista_Circular_doble
     {
       label2.Text = milista.ContarNodos ()+ "" ;
     }
-    
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+      ListaMascota frm2 = new ListaMascota();
+
+      frm2.Show();
+    }
   }
 }
 

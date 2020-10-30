@@ -38,29 +38,30 @@
       this.lblContarDes = new System.Windows.Forms.Label();
       this.lblContar = new System.Windows.Forms.Label();
       this.label2 = new System.Windows.Forms.Label();
+      this.button1 = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // label1
       // 
       this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(79, 117);
+      this.label1.Location = new System.Drawing.Point(72, 107);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(248, 25);
+      this.label1.Size = new System.Drawing.Size(237, 24);
       this.label1.TabIndex = 1;
       this.label1.Text = "Inserte elemento de la lista:";
       // 
       // txtdato
       // 
-      this.txtdato.Location = new System.Drawing.Point(403, 117);
+      this.txtdato.Location = new System.Drawing.Point(366, 107);
       this.txtdato.Name = "txtdato";
-      this.txtdato.Size = new System.Drawing.Size(161, 29);
+      this.txtdato.Size = new System.Drawing.Size(147, 28);
       this.txtdato.TabIndex = 2;
       // 
       // btnContar
       // 
-      this.btnContar.Location = new System.Drawing.Point(427, 271);
+      this.btnContar.Location = new System.Drawing.Point(388, 248);
       this.btnContar.Name = "btnContar";
-      this.btnContar.Size = new System.Drawing.Size(115, 45);
+      this.btnContar.Size = new System.Drawing.Size(105, 41);
       this.btnContar.TabIndex = 3;
       this.btnContar.Text = "Contar";
       this.btnContar.UseVisualStyleBackColor = true;
@@ -68,9 +69,9 @@
       // 
       // btnInsertar
       // 
-      this.btnInsertar.Location = new System.Drawing.Point(427, 184);
+      this.btnInsertar.Location = new System.Drawing.Point(388, 169);
       this.btnInsertar.Name = "btnInsertar";
-      this.btnInsertar.Size = new System.Drawing.Size(115, 45);
+      this.btnInsertar.Size = new System.Drawing.Size(105, 41);
       this.btnInsertar.TabIndex = 4;
       this.btnInsertar.Text = "Insertar";
       this.btnInsertar.UseVisualStyleBackColor = true;
@@ -78,9 +79,9 @@
       // 
       // btnMostrar
       // 
-      this.btnMostrar.Location = new System.Drawing.Point(585, 271);
+      this.btnMostrar.Location = new System.Drawing.Point(532, 248);
       this.btnMostrar.Name = "btnMostrar";
-      this.btnMostrar.Size = new System.Drawing.Size(115, 45);
+      this.btnMostrar.Size = new System.Drawing.Size(105, 41);
       this.btnMostrar.TabIndex = 5;
       this.btnMostrar.Text = "Mostrar";
       this.btnMostrar.UseVisualStyleBackColor = true;
@@ -88,9 +89,9 @@
       // 
       // btnBuscar
       // 
-      this.btnBuscar.Location = new System.Drawing.Point(585, 184);
+      this.btnBuscar.Location = new System.Drawing.Point(532, 169);
       this.btnBuscar.Name = "btnBuscar";
-      this.btnBuscar.Size = new System.Drawing.Size(115, 45);
+      this.btnBuscar.Size = new System.Drawing.Size(105, 41);
       this.btnBuscar.TabIndex = 6;
       this.btnBuscar.Text = "Buscar";
       this.btnBuscar.UseVisualStyleBackColor = true;
@@ -98,9 +99,9 @@
       // 
       // btnBorrar
       // 
-      this.btnBorrar.Location = new System.Drawing.Point(511, 358);
+      this.btnBorrar.Location = new System.Drawing.Point(388, 328);
       this.btnBorrar.Name = "btnBorrar";
-      this.btnBorrar.Size = new System.Drawing.Size(115, 45);
+      this.btnBorrar.Size = new System.Drawing.Size(105, 41);
       this.btnBorrar.TabIndex = 7;
       this.btnBorrar.Text = "Borrar";
       this.btnBorrar.UseVisualStyleBackColor = true;
@@ -109,35 +110,46 @@
       // lblContarDes
       // 
       this.lblContarDes.AutoSize = true;
-      this.lblContarDes.Location = new System.Drawing.Point(79, 204);
+      this.lblContarDes.Location = new System.Drawing.Point(72, 187);
       this.lblContarDes.Name = "lblContarDes";
-      this.lblContarDes.Size = new System.Drawing.Size(112, 25);
+      this.lblContarDes.Size = new System.Drawing.Size(110, 24);
       this.lblContarDes.TabIndex = 8;
       this.lblContarDes.Text = "....................";
       // 
       // lblContar
       // 
       this.lblContar.AutoSize = true;
-      this.lblContar.Location = new System.Drawing.Point(79, 271);
+      this.lblContar.Location = new System.Drawing.Point(72, 248);
       this.lblContar.Name = "lblContar";
-      this.lblContar.Size = new System.Drawing.Size(117, 25);
+      this.lblContar.Size = new System.Drawing.Size(115, 24);
       this.lblContar.TabIndex = 9;
       this.lblContar.Text = ".....................";
       // 
       // label2
       // 
       this.label2.AutoSize = true;
-      this.label2.Location = new System.Drawing.Point(249, 235);
+      this.label2.Location = new System.Drawing.Point(226, 215);
       this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(64, 25);
+      this.label2.Size = new System.Drawing.Size(60, 24);
       this.label2.TabIndex = 10;
       this.label2.Text = "label2";
       // 
+      // button1
+      // 
+      this.button1.Location = new System.Drawing.Point(532, 319);
+      this.button1.Name = "button1";
+      this.button1.Size = new System.Drawing.Size(105, 58);
+      this.button1.TabIndex = 11;
+      this.button1.Text = "Siguiente Lista";
+      this.button1.UseVisualStyleBackColor = true;
+      this.button1.Click += new System.EventHandler(this.button1_Click);
+      // 
       // Lista_Circular_Doble
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(800, 450);
+      this.ClientSize = new System.Drawing.Size(727, 413);
+      this.Controls.Add(this.button1);
       this.Controls.Add(this.label2);
       this.Controls.Add(this.lblContar);
       this.Controls.Add(this.lblContarDes);
@@ -166,6 +178,7 @@
     private System.Windows.Forms.Label lblContarDes;
     private System.Windows.Forms.Label lblContar;
     private System.Windows.Forms.Label label2;
+    private System.Windows.Forms.Button button1;
   }
 }
 
