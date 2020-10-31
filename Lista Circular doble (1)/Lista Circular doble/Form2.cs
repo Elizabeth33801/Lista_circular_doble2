@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Lista_Circular_doble
 {
@@ -16,6 +17,7 @@ namespace Lista_Circular_doble
     public FrmDatos()
     {
       InitializeComponent();
+    
       tsmConsultar.Enabled = false;
       tsmEliminar.Enabled = false;
 
@@ -192,6 +194,72 @@ namespace Lista_Circular_doble
           dgvDatos.DataSource = OtraLista;
         }
       }
+    }
+
+    private void FrmDatos_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Guardar_Click(object sender, EventArgs e)
+    {
+      SaveFileDialog sfd = new SaveFileDialog() { Filter = "Archivo CSV|*.csv" };
+      if (sfd.ShowDialog() == DialogResult.OK)
+      {
+        List<string> filas = new List<string>();
+
+        List<string> cabeceras = new List<string>();
+        foreach (DataGridViewColumn col in dgvDatos.Columns)
+        {
+          cabeceras.Add(col.HeaderText);
+        }
+        string SEP = txtSEP.Text;
+        filas.Add(string.Join(SEP, cabeceras));
+
+        foreach (DataGridViewRow fila in dgvDatos.Rows)
+        {
+          try
+          {
+
+            List<string> celdas = new List<string>();
+            foreach (DataGridViewCell c in fila.Cells)
+              celdas.Add(c.Value.ToString());
+
+            filas.Add(string.Join(SEP, celdas));
+          }
+          catch (Exception ex)
+          { }
+        }
+
+        File.WriteAllLines(sfd.FileName, filas);
+      }
+    }
+
+    private void btnAbrir_Click(object sender, EventArgs e)
+    {
+      OpenFileDialog ofd = new OpenFileDialog() { Filter = "Archivo CSV|*.csv" };
+      if (ofd.ShowDialog() == DialogResult.OK)
+      {
+        string SEP = txtSEP.Text;
+
+        string[] lineas = File.ReadAllLines(ofd.FileName);
+        string[] cabeceras = lineas[0].Split(new[] { SEP }, StringSplitOptions.None);
+
+        dgvDatos.Columns.Clear();
+        foreach (string c in cabeceras)
+          dgvDatos.Columns.Add(c, c);
+
+        for (int i = 1; i < lineas.Length; i++)
+        {
+          string[] celdas = lineas[i].Split(new[] { SEP }, StringSplitOptions.None);
+          dgvDatos.Rows.Add(celdas);
+        }
+      }
+    }
+
+    private void dgvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+    {
+
     }
   }
 }

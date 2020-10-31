@@ -42,6 +42,9 @@
       this.tsmEliminar = new System.Windows.Forms.ToolStripLabel();
       this.tsmSalir = new System.Windows.Forms.ToolStripLabel();
       this.erpError = new System.Windows.Forms.ErrorProvider(this.components);
+      this.Guardar = new System.Windows.Forms.Button();
+      this.txtSEP = new System.Windows.Forms.TextBox();
+      this.btnAbrir = new System.Windows.Forms.Button();
       ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
       this.toolStrip1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.erpError)).BeginInit();
@@ -56,7 +59,7 @@
       this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label1.Location = new System.Drawing.Point(24, 161);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(136, 36);
+      this.label1.Size = new System.Drawing.Size(130, 34);
       this.label1.TabIndex = 0;
       this.label1.Text = "Nombre:";
       // 
@@ -69,7 +72,7 @@
       this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label2.Location = new System.Drawing.Point(24, 309);
       this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(90, 36);
+      this.label2.Size = new System.Drawing.Size(86, 34);
       this.label2.TabIndex = 1;
       this.label2.Text = "Edad:";
       // 
@@ -82,7 +85,7 @@
       this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label3.Location = new System.Drawing.Point(24, 232);
       this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(88, 36);
+      this.label3.Size = new System.Drawing.Size(83, 34);
       this.label3.TabIndex = 2;
       this.label3.Text = "Raza:";
       // 
@@ -139,6 +142,7 @@
       this.dgvDatos.RowTemplate.Height = 30;
       this.dgvDatos.Size = new System.Drawing.Size(699, 461);
       this.dgvDatos.TabIndex = 6;
+      this.dgvDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellContentClick);
       // 
       // toolStrip1
       // 
@@ -187,11 +191,41 @@
       // 
       this.erpError.ContainerControl = this;
       // 
+      // Guardar
+      // 
+      this.Guardar.Location = new System.Drawing.Point(61, 435);
+      this.Guardar.Name = "Guardar";
+      this.Guardar.Size = new System.Drawing.Size(124, 70);
+      this.Guardar.TabIndex = 9;
+      this.Guardar.Text = "Guardar y cargar";
+      this.Guardar.UseVisualStyleBackColor = true;
+      this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
+      // 
+      // txtSEP
+      // 
+      this.txtSEP.Location = new System.Drawing.Point(104, 381);
+      this.txtSEP.Name = "txtSEP";
+      this.txtSEP.Size = new System.Drawing.Size(100, 28);
+      this.txtSEP.TabIndex = 10;
+      // 
+      // btnAbrir
+      // 
+      this.btnAbrir.Location = new System.Drawing.Point(191, 435);
+      this.btnAbrir.Name = "btnAbrir";
+      this.btnAbrir.Size = new System.Drawing.Size(143, 70);
+      this.btnAbrir.TabIndex = 11;
+      this.btnAbrir.Text = "Abrir";
+      this.btnAbrir.UseVisualStyleBackColor = true;
+      this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
+      // 
       // FrmDatos
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1145, 556);
+      this.Controls.Add(this.btnAbrir);
+      this.Controls.Add(this.txtSEP);
+      this.Controls.Add(this.Guardar);
       this.Controls.Add(this.toolStrip1);
       this.Controls.Add(this.dgvDatos);
       this.Controls.Add(this.cmbRaza);
@@ -202,6 +236,7 @@
       this.Controls.Add(this.label1);
       this.Name = "FrmDatos";
       this.Text = "ListaMascotas";
+      this.Load += new System.EventHandler(this.FrmDatos_Load);
       ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
       this.toolStrip1.ResumeLayout(false);
       this.toolStrip1.PerformLayout();
@@ -226,5 +261,8 @@
     private System.Windows.Forms.ToolStripLabel tsmEliminar;
     private System.Windows.Forms.ToolStripLabel tsmSalir;
     private System.Windows.Forms.ErrorProvider erpError;
+    private System.Windows.Forms.Button Guardar;
+    private System.Windows.Forms.TextBox txtSEP;
+    private System.Windows.Forms.Button btnAbrir;
   }
 }

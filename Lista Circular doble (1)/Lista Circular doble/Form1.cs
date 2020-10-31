@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Lista_Circular_doble
 {
-  public partial class Lista_Circular_Doble : Form
+  public partial class form1 : Form
   {
     Lista milista;
-    public Lista_Circular_Doble()
+    public form1()
     {
       InitializeComponent();
       milista = new Lista();
@@ -45,11 +46,11 @@ namespace Lista_Circular_doble
     {
       if (milista.Buscar(int.Parse(txtdato.Text)))
       {
-        lblContar.Text = "Si esta";
+        buscando.Text = "Si esta";
       }
       else
       {
-        lblContar.Text = "No esta";
+        buscando.Text = "No esta";
       }
     }
 
@@ -66,9 +67,81 @@ namespace Lista_Circular_doble
 
     private void button1_Click(object sender, EventArgs e)
     {
-      ListaMascota frm2 = new ListaMascota();
+      
+      FrmDatos x = new FrmDatos();
+      x.Show();
+      this.Visible = false;
+   
+    
+    }
 
-      frm2.Show();
+    private void button2_Click(object sender, EventArgs e)
+    {
+      SaveFileDialog sfd = new SaveFileDialog() { Filter = "Archivo CSV|*.csv" };
+      if (sfd.ShowDialog() == DialogResult.OK)
+      {
+        List<string> filas = new List<string>();
+
+        List<string> cabeceras = new List<string>();
+        foreach (DataGridViewColumn col in dataGridView1.Columns)
+        {
+          cabeceras.Add(col.HeaderText);
+        }
+        string SEP = txtSEP.Text;
+        filas.Add(string.Join(SEP, cabeceras));
+
+        foreach (DataGridViewRow fila in dataGridView1.Rows)
+        {
+          try
+          {
+
+            List<string> celdas = new List<string>();
+            foreach (DataGridViewCell c in fila.Cells)
+              celdas.Add(c.Value.ToString());
+
+            filas.Add(string.Join(SEP, celdas));
+          }
+          catch (Exception ex)
+          { }
+        }
+
+        File.WriteAllLines(sfd.FileName, filas);
+      }
+    }
+
+  
+    private void btnAbrir_Click(object sender, EventArgs e)
+    {
+      OpenFileDialog ofd = new OpenFileDialog() { Filter = "Archivo CSV|*.csv" };
+      if (ofd.ShowDialog() == DialogResult.OK)
+      {
+        string SEP = txtSEP.Text;
+
+        string[] lineas = File.ReadAllLines(ofd.FileName);
+        string[] cabeceras = lineas[0].Split(new[] { SEP }, StringSplitOptions.None);
+
+        dataGridView1.Columns.Clear();
+        foreach (string c in cabeceras)
+          dataGridView1.Columns.Add(c, c);
+
+        for (int i = 1; i < lineas.Length; i++)
+        {
+          string[] celdas = lineas[i].Split(new[] { SEP }, StringSplitOptions.None);
+          dataGridView1.Rows.Add(celdas);
+        }
+      }
+    }
+
+    private void button3_Click(object sender, EventArgs e)
+    {
+      int m = dataGridView1.Rows.Add();
+      //colocamos la nueva informacion 
+      dataGridView1.Rows[m].Cells[0].Value = lblContar.Text;
+    }
+
+    private void lblContarDes_Click(object sender, EventArgs e)
+    {
+
     }
   }
 }

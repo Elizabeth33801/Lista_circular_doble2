@@ -16,7 +16,8 @@ namespace Lista_Circular_doble
     {
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new Lista_Circular_Doble());
+
+      Application.Run(new form1());
     }
   }
 }
