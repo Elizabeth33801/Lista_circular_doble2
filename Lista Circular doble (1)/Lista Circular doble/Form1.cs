@@ -110,7 +110,16 @@ namespace Lista_Circular_doble
     }
 
   
-    private void btnAbrir_Click(object sender, EventArgs e)
+    
+    private void button3_Click(object sender, EventArgs e)
+    {
+      int m = dataGridView1.Rows.Add();
+      //colocamos la nueva informacion 
+      dataGridView1.Rows[m].Cells[0].Value = lblContar.Text;
+    }
+
+
+    private void btnAbrir_Click_1(object sender, EventArgs e)
     {
       OpenFileDialog ofd = new OpenFileDialog() { Filter = "Archivo CSV|*.csv" };
       if (ofd.ShowDialog() == DialogResult.OK)
@@ -130,18 +139,6 @@ namespace Lista_Circular_doble
           dataGridView1.Rows.Add(celdas);
         }
       }
-    }
-
-    private void button3_Click(object sender, EventArgs e)
-    {
-      int m = dataGridView1.Rows.Add();
-      //colocamos la nueva informacion 
-      dataGridView1.Rows[m].Cells[0].Value = lblContar.Text;
-    }
-
-    private void lblContarDes_Click(object sender, EventArgs e)
-    {
-
     }
   }
 }

@@ -44,7 +44,6 @@
       this.erpError = new System.Windows.Forms.ErrorProvider(this.components);
       this.Guardar = new System.Windows.Forms.Button();
       this.txtSEP = new System.Windows.Forms.TextBox();
-      this.btnAbrir = new System.Windows.Forms.Button();
       ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
       this.toolStrip1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.erpError)).BeginInit();
@@ -193,7 +192,7 @@
       // 
       // Guardar
       // 
-      this.Guardar.Location = new System.Drawing.Point(61, 435);
+      this.Guardar.Location = new System.Drawing.Point(94, 441);
       this.Guardar.Name = "Guardar";
       this.Guardar.Size = new System.Drawing.Size(124, 70);
       this.Guardar.TabIndex = 9;
@@ -208,22 +207,11 @@
       this.txtSEP.Size = new System.Drawing.Size(100, 28);
       this.txtSEP.TabIndex = 10;
       // 
-      // btnAbrir
-      // 
-      this.btnAbrir.Location = new System.Drawing.Point(191, 435);
-      this.btnAbrir.Name = "btnAbrir";
-      this.btnAbrir.Size = new System.Drawing.Size(143, 70);
-      this.btnAbrir.TabIndex = 11;
-      this.btnAbrir.Text = "Abrir";
-      this.btnAbrir.UseVisualStyleBackColor = true;
-      this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
-      // 
       // FrmDatos
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1145, 556);
-      this.Controls.Add(this.btnAbrir);
       this.Controls.Add(this.txtSEP);
       this.Controls.Add(this.Guardar);
       this.Controls.Add(this.toolStrip1);
@@ -263,6 +251,5 @@
     private System.Windows.Forms.ErrorProvider erpError;
     private System.Windows.Forms.Button Guardar;
     private System.Windows.Forms.TextBox txtSEP;
-    private System.Windows.Forms.Button btnAbrir;
   }
 }

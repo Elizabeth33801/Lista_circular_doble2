@@ -41,11 +41,11 @@
       this.button1 = new System.Windows.Forms.Button();
       this.button2 = new System.Windows.Forms.Button();
       this.dataGridView1 = new System.Windows.Forms.DataGridView();
-      this.btnAbrir = new System.Windows.Forms.Button();
+      this.Lista = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.txtSEP = new System.Windows.Forms.TextBox();
       this.button3 = new System.Windows.Forms.Button();
-      this.Lista = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.buscando = new System.Windows.Forms.Label();
+      this.btnAbrir = new System.Windows.Forms.Button();
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
       this.SuspendLayout();
       // 
@@ -148,7 +148,7 @@
       this.lblContarDes.Size = new System.Drawing.Size(110, 24);
       this.lblContarDes.TabIndex = 8;
       this.lblContarDes.Text = "....................";
-      this.lblContarDes.Click += new System.EventHandler(this.lblContarDes_Click);
+    
       // 
       // lblContar
       // 
@@ -215,15 +215,12 @@
       this.dataGridView1.Size = new System.Drawing.Size(418, 346);
       this.dataGridView1.TabIndex = 13;
       // 
-      // btnAbrir
+      // Lista
       // 
-      this.btnAbrir.Location = new System.Drawing.Point(767, 489);
-      this.btnAbrir.Name = "btnAbrir";
-      this.btnAbrir.Size = new System.Drawing.Size(238, 65);
-      this.btnAbrir.TabIndex = 14;
-      this.btnAbrir.Text = "Abrir";
-      this.btnAbrir.UseVisualStyleBackColor = true;
-      this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
+      this.Lista.HeaderText = "Lista";
+      this.Lista.MinimumWidth = 8;
+      this.Lista.Name = "Lista";
+      this.Lista.Width = 165;
       // 
       // txtSEP
       // 
@@ -245,13 +242,6 @@
       this.button3.UseVisualStyleBackColor = true;
       this.button3.Click += new System.EventHandler(this.button3_Click);
       // 
-      // Lista
-      // 
-      this.Lista.HeaderText = "Lista";
-      this.Lista.MinimumWidth = 8;
-      this.Lista.Name = "Lista";
-      this.Lista.Width = 165;
-      // 
       // buscando
       // 
       this.buscando.AutoSize = true;
@@ -261,15 +251,25 @@
       this.buscando.TabIndex = 17;
       this.buscando.Text = "Buscando dato...";
       // 
+      // btnAbrir
+      // 
+      this.btnAbrir.Location = new System.Drawing.Point(767, 489);
+      this.btnAbrir.Name = "btnAbrir";
+      this.btnAbrir.Size = new System.Drawing.Size(238, 65);
+      this.btnAbrir.TabIndex = 19;
+      this.btnAbrir.Text = "Abrir";
+      this.btnAbrir.UseVisualStyleBackColor = true;
+      this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click_1);
+      // 
       // form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1064, 596);
+      this.Controls.Add(this.btnAbrir);
       this.Controls.Add(this.buscando);
       this.Controls.Add(this.button3);
       this.Controls.Add(this.txtSEP);
-      this.Controls.Add(this.btnAbrir);
       this.Controls.Add(this.dataGridView1);
       this.Controls.Add(this.button2);
       this.Controls.Add(this.button1);
@@ -305,11 +305,11 @@
     private System.Windows.Forms.Button button1;
     private System.Windows.Forms.Button button2;
     private System.Windows.Forms.DataGridView dataGridView1;
-    private System.Windows.Forms.Button btnAbrir;
     private System.Windows.Forms.TextBox txtSEP;
     private System.Windows.Forms.Button button3;
     private System.Windows.Forms.DataGridViewTextBoxColumn Lista;
     private System.Windows.Forms.Label buscando;
+    private System.Windows.Forms.Button btnAbrir;
   }
 }
 
