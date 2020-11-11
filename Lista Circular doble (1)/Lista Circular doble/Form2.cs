@@ -235,31 +235,8 @@ namespace Lista_Circular_doble
       }
     }
 
-    private void btnAbrir_Click(object sender, EventArgs e)
-    {
-      OpenFileDialog ofd = new OpenFileDialog() { Filter = "Archivo CSV|*.csv" };
-      if (ofd.ShowDialog() == DialogResult.OK)
-      {
-        string SEP = txtSEP.Text;
+ 
 
-        string[] lineas = File.ReadAllLines(ofd.FileName);
-        string[] cabeceras = lineas[0].Split(new[] { SEP }, StringSplitOptions.None);
-
-        dgvDatos.Columns.Clear();
-        foreach (string c in cabeceras)
-          dgvDatos.Columns.Add(c, c);
-
-        for (int i = 1; i < lineas.Length; i++)
-        {
-          string[] celdas = lineas[i].Split(new[] { SEP }, StringSplitOptions.None);
-          dgvDatos.Rows.Add(celdas);
-        }
-      }
-    }
-
-    private void dgvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-    {
-
-    }
+  
   }
 }

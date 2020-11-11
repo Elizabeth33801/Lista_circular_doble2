@@ -51,70 +51,57 @@
       // 
       // label1
       // 
-      this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.label1.AutoSize = true;
       this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label1.Location = new System.Drawing.Point(24, 161);
+      this.label1.Location = new System.Drawing.Point(19, 117);
+      this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(130, 34);
+      this.label1.Size = new System.Drawing.Size(101, 27);
       this.label1.TabIndex = 0;
       this.label1.Text = "Nombre:";
       // 
       // label2
       // 
-      this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.label2.AutoSize = true;
       this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label2.Location = new System.Drawing.Point(24, 309);
+      this.label2.Location = new System.Drawing.Point(19, 225);
+      this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(86, 34);
+      this.label2.Size = new System.Drawing.Size(67, 27);
       this.label2.TabIndex = 1;
       this.label2.Text = "Edad:";
       // 
       // label3
       // 
-      this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.label3.AutoSize = true;
       this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label3.Location = new System.Drawing.Point(24, 232);
+      this.label3.Location = new System.Drawing.Point(19, 169);
+      this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(83, 34);
+      this.label3.Size = new System.Drawing.Size(66, 27);
       this.label3.TabIndex = 2;
       this.label3.Text = "Raza:";
       // 
       // txtNombre
       // 
-      this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.txtNombre.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txtNombre.Location = new System.Drawing.Point(202, 156);
+      this.txtNombre.Location = new System.Drawing.Point(162, 113);
+      this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.txtNombre.Name = "txtNombre";
-      this.txtNombre.Size = new System.Drawing.Size(199, 42);
+      this.txtNombre.Size = new System.Drawing.Size(144, 34);
       this.txtNombre.TabIndex = 3;
       // 
       // txtEdad
       // 
-      this.txtEdad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.txtEdad.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txtEdad.Location = new System.Drawing.Point(202, 305);
+      this.txtEdad.Location = new System.Drawing.Point(162, 222);
+      this.txtEdad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.txtEdad.Name = "txtEdad";
-      this.txtEdad.Size = new System.Drawing.Size(199, 42);
+      this.txtEdad.Size = new System.Drawing.Size(144, 34);
       this.txtEdad.TabIndex = 4;
       // 
       // cmbRaza
       // 
-      this.cmbRaza.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.cmbRaza.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.cmbRaza.FormattingEnabled = true;
       this.cmbRaza.Items.AddRange(new object[] {
@@ -123,25 +110,24 @@
             "Dowerman",
             "Labrador",
             "Chihuahua"});
-      this.cmbRaza.Location = new System.Drawing.Point(202, 232);
+      this.cmbRaza.Location = new System.Drawing.Point(162, 169);
+      this.cmbRaza.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.cmbRaza.Name = "cmbRaza";
-      this.cmbRaza.Size = new System.Drawing.Size(199, 42);
+      this.cmbRaza.Size = new System.Drawing.Size(144, 35);
       this.cmbRaza.TabIndex = 5;
       // 
       // dgvDatos
       // 
-      this.dgvDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.dgvDatos.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
       this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dgvDatos.Location = new System.Drawing.Point(434, 68);
+      this.dgvDatos.Location = new System.Drawing.Point(347, 49);
+      this.dgvDatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.dgvDatos.Name = "dgvDatos";
       this.dgvDatos.RowHeadersWidth = 67;
       this.dgvDatos.RowTemplate.Height = 30;
-      this.dgvDatos.Size = new System.Drawing.Size(699, 461);
+      this.dgvDatos.Size = new System.Drawing.Size(755, 397);
       this.dgvDatos.TabIndex = 6;
-      this.dgvDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellContentClick);
+
       // 
       // toolStrip1
       // 
@@ -153,7 +139,7 @@
             this.tsmSalir});
       this.toolStrip1.Location = new System.Drawing.Point(0, 0);
       this.toolStrip1.Name = "toolStrip1";
-      this.toolStrip1.Size = new System.Drawing.Size(1145, 33);
+      this.toolStrip1.Size = new System.Drawing.Size(1112, 25);
       this.toolStrip1.TabIndex = 8;
       this.toolStrip1.Text = "toolStrip1";
       // 
@@ -161,28 +147,28 @@
       // 
       this.tslRegistrar.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
       this.tslRegistrar.Name = "tslRegistrar";
-      this.tslRegistrar.Size = new System.Drawing.Size(89, 28);
+      this.tslRegistrar.Size = new System.Drawing.Size(68, 22);
       this.tslRegistrar.Text = "Registrar";
       this.tslRegistrar.Click += new System.EventHandler(this.toolStripLabel1_Click);
       // 
       // tsmConsultar
       // 
       this.tsmConsultar.Name = "tsmConsultar";
-      this.tsmConsultar.Size = new System.Drawing.Size(95, 28);
+      this.tsmConsultar.Size = new System.Drawing.Size(71, 22);
       this.tsmConsultar.Text = "Consultar";
       this.tsmConsultar.Click += new System.EventHandler(this.tsmConsultar_Click);
       // 
       // tsmEliminar
       // 
       this.tsmEliminar.Name = "tsmEliminar";
-      this.tsmEliminar.Size = new System.Drawing.Size(82, 28);
+      this.tsmEliminar.Size = new System.Drawing.Size(63, 22);
       this.tsmEliminar.Text = "Eliminar";
       this.tsmEliminar.Click += new System.EventHandler(this.tsmEliminar_Click);
       // 
       // tsmSalir
       // 
       this.tsmSalir.Name = "tsmSalir";
-      this.tsmSalir.Size = new System.Drawing.Size(50, 28);
+      this.tsmSalir.Size = new System.Drawing.Size(38, 22);
       this.tsmSalir.Text = "Salir";
       this.tsmSalir.Click += new System.EventHandler(this.tsmSalir_Click);
       // 
@@ -192,9 +178,10 @@
       // 
       // Guardar
       // 
-      this.Guardar.Location = new System.Drawing.Point(94, 441);
+      this.Guardar.Location = new System.Drawing.Point(75, 321);
+      this.Guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.Guardar.Name = "Guardar";
-      this.Guardar.Size = new System.Drawing.Size(124, 70);
+      this.Guardar.Size = new System.Drawing.Size(99, 51);
       this.Guardar.TabIndex = 9;
       this.Guardar.Text = "Guardar y cargar";
       this.Guardar.UseVisualStyleBackColor = true;
@@ -202,16 +189,17 @@
       // 
       // txtSEP
       // 
-      this.txtSEP.Location = new System.Drawing.Point(104, 381);
+      this.txtSEP.Location = new System.Drawing.Point(202, 321);
+      this.txtSEP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.txtSEP.Name = "txtSEP";
-      this.txtSEP.Size = new System.Drawing.Size(100, 28);
+      this.txtSEP.Size = new System.Drawing.Size(81, 22);
       this.txtSEP.TabIndex = 10;
       // 
       // FrmDatos
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(1145, 556);
+      this.ClientSize = new System.Drawing.Size(1112, 466);
       this.Controls.Add(this.txtSEP);
       this.Controls.Add(this.Guardar);
       this.Controls.Add(this.toolStrip1);
@@ -222,6 +210,7 @@
       this.Controls.Add(this.label3);
       this.Controls.Add(this.label2);
       this.Controls.Add(this.label1);
+      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.Name = "FrmDatos";
       this.Text = "ListaMascotas";
       this.Load += new System.EventHandler(this.FrmDatos_Load);

@@ -45,41 +45,34 @@
       this.txtSEP = new System.Windows.Forms.TextBox();
       this.button3 = new System.Windows.Forms.Button();
       this.buscando = new System.Windows.Forms.Label();
-      this.btnAbrir = new System.Windows.Forms.Button();
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
       this.SuspendLayout();
       // 
       // label1
       // 
-      this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.label1.AutoSize = true;
       this.label1.Font = new System.Drawing.Font("Segoe Print", 15.94937F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label1.Location = new System.Drawing.Point(197, 32);
+      this.label1.Location = new System.Drawing.Point(158, 23);
+      this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(529, 63);
+      this.label1.Size = new System.Drawing.Size(401, 47);
       this.label1.TabIndex = 1;
       this.label1.Text = "Inserte elemento de la lista:";
       // 
       // txtdato
       // 
-      this.txtdato.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.txtdato.Location = new System.Drawing.Point(777, 55);
+      this.txtdato.Location = new System.Drawing.Point(622, 40);
+      this.txtdato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.txtdato.Name = "txtdato";
-      this.txtdato.Size = new System.Drawing.Size(108, 28);
+      this.txtdato.Size = new System.Drawing.Size(56, 22);
       this.txtdato.TabIndex = 2;
       // 
       // btnContar
       // 
-      this.btnContar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.btnContar.Location = new System.Drawing.Point(523, 347);
+      this.btnContar.Location = new System.Drawing.Point(717, 297);
+      this.btnContar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.btnContar.Name = "btnContar";
-      this.btnContar.Size = new System.Drawing.Size(238, 65);
+      this.btnContar.Size = new System.Drawing.Size(159, 45);
       this.btnContar.TabIndex = 3;
       this.btnContar.Text = "Contar";
       this.btnContar.UseVisualStyleBackColor = true;
@@ -87,12 +80,10 @@
       // 
       // btnInsertar
       // 
-      this.btnInsertar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.btnInsertar.Location = new System.Drawing.Point(523, 277);
+      this.btnInsertar.Location = new System.Drawing.Point(717, 246);
+      this.btnInsertar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.btnInsertar.Name = "btnInsertar";
-      this.btnInsertar.Size = new System.Drawing.Size(238, 65);
+      this.btnInsertar.Size = new System.Drawing.Size(159, 45);
       this.btnInsertar.TabIndex = 4;
       this.btnInsertar.Text = "Insertar";
       this.btnInsertar.UseVisualStyleBackColor = true;
@@ -100,12 +91,10 @@
       // 
       // btnMostrar
       // 
-      this.btnMostrar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.btnMostrar.Location = new System.Drawing.Point(767, 277);
+      this.btnMostrar.Location = new System.Drawing.Point(913, 246);
+      this.btnMostrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.btnMostrar.Name = "btnMostrar";
-      this.btnMostrar.Size = new System.Drawing.Size(238, 64);
+      this.btnMostrar.Size = new System.Drawing.Size(159, 45);
       this.btnMostrar.TabIndex = 5;
       this.btnMostrar.Text = "Mostrar";
       this.btnMostrar.UseVisualStyleBackColor = true;
@@ -113,12 +102,10 @@
       // 
       // btnBuscar
       // 
-      this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.btnBuscar.Location = new System.Drawing.Point(523, 418);
+      this.btnBuscar.Location = new System.Drawing.Point(717, 349);
+      this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.btnBuscar.Name = "btnBuscar";
-      this.btnBuscar.Size = new System.Drawing.Size(238, 65);
+      this.btnBuscar.Size = new System.Drawing.Size(159, 45);
       this.btnBuscar.TabIndex = 6;
       this.btnBuscar.Text = "Buscar";
       this.btnBuscar.UseVisualStyleBackColor = true;
@@ -126,12 +113,10 @@
       // 
       // btnBorrar
       // 
-      this.btnBorrar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.btnBorrar.Location = new System.Drawing.Point(767, 347);
+      this.btnBorrar.Location = new System.Drawing.Point(913, 297);
+      this.btnBorrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.btnBorrar.Name = "btnBorrar";
-      this.btnBorrar.Size = new System.Drawing.Size(238, 65);
+      this.btnBorrar.Size = new System.Drawing.Size(159, 45);
       this.btnBorrar.TabIndex = 7;
       this.btnBorrar.Text = "Borrar";
       this.btnBorrar.UseVisualStyleBackColor = true;
@@ -139,49 +124,40 @@
       // 
       // lblContarDes
       // 
-      this.lblContarDes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.lblContarDes.AutoSize = true;
-      this.lblContarDes.Location = new System.Drawing.Point(50, 122);
+      this.lblContarDes.Location = new System.Drawing.Point(40, 89);
+      this.lblContarDes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.lblContarDes.Name = "lblContarDes";
-      this.lblContarDes.Size = new System.Drawing.Size(110, 24);
+      this.lblContarDes.Size = new System.Drawing.Size(88, 17);
       this.lblContarDes.TabIndex = 8;
       this.lblContarDes.Text = "....................";
-    
       // 
       // lblContar
       // 
-      this.lblContar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.lblContar.AutoSize = true;
-      this.lblContar.Location = new System.Drawing.Point(50, 159);
+      this.lblContar.Location = new System.Drawing.Point(40, 116);
+      this.lblContar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.lblContar.Name = "lblContar";
-      this.lblContar.Size = new System.Drawing.Size(115, 24);
+      this.lblContar.Size = new System.Drawing.Size(92, 17);
       this.lblContar.TabIndex = 9;
       this.lblContar.Text = ".....................";
       // 
       // label2
       // 
-      this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.label2.AutoSize = true;
-      this.label2.Location = new System.Drawing.Point(45, 198);
+      this.label2.Location = new System.Drawing.Point(36, 144);
+      this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(165, 24);
+      this.label2.Size = new System.Drawing.Size(124, 17);
       this.label2.TabIndex = 10;
       this.label2.Text = "Contando nodos...";
       // 
       // button1
       // 
-      this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.button1.Location = new System.Drawing.Point(767, 418);
+      this.button1.Location = new System.Drawing.Point(913, 349);
+      this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.button1.Name = "button1";
-      this.button1.Size = new System.Drawing.Size(238, 65);
+      this.button1.Size = new System.Drawing.Size(159, 45);
       this.button1.TabIndex = 11;
       this.button1.Text = "Siguiente Lista";
       this.button1.UseVisualStyleBackColor = true;
@@ -189,12 +165,10 @@
       // 
       // button2
       // 
-      this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.button2.Location = new System.Drawing.Point(523, 489);
+      this.button2.Location = new System.Drawing.Point(717, 401);
+      this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.button2.Name = "button2";
-      this.button2.Size = new System.Drawing.Size(238, 65);
+      this.button2.Size = new System.Drawing.Size(159, 45);
       this.button2.TabIndex = 12;
       this.button2.Text = "Guardar y cargar";
       this.button2.UseVisualStyleBackColor = true;
@@ -202,17 +176,16 @@
       // 
       // dataGridView1
       // 
-      this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
       this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Lista});
-      this.dataGridView1.Location = new System.Drawing.Point(12, 238);
+      this.dataGridView1.Location = new System.Drawing.Point(10, 173);
+      this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.dataGridView1.Name = "dataGridView1";
       this.dataGridView1.RowHeadersWidth = 67;
       this.dataGridView1.RowTemplate.Height = 30;
-      this.dataGridView1.Size = new System.Drawing.Size(418, 346);
+      this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+      this.dataGridView1.Size = new System.Drawing.Size(636, 405);
       this.dataGridView1.TabIndex = 13;
       // 
       // Lista
@@ -224,19 +197,18 @@
       // 
       // txtSEP
       // 
-      this.txtSEP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.txtSEP.Location = new System.Drawing.Point(523, 215);
+      this.txtSEP.Location = new System.Drawing.Point(717, 201);
+      this.txtSEP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.txtSEP.Name = "txtSEP";
-      this.txtSEP.Size = new System.Drawing.Size(100, 28);
+      this.txtSEP.Size = new System.Drawing.Size(50, 22);
       this.txtSEP.TabIndex = 15;
       // 
       // button3
       // 
-      this.button3.Location = new System.Drawing.Point(675, 141);
+      this.button3.Location = new System.Drawing.Point(839, 148);
+      this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.button3.Name = "button3";
-      this.button3.Size = new System.Drawing.Size(210, 59);
+      this.button3.Size = new System.Drawing.Size(168, 43);
       this.button3.TabIndex = 16;
       this.button3.Text = "Modificar tabla";
       this.button3.UseVisualStyleBackColor = true;
@@ -245,28 +217,18 @@
       // buscando
       // 
       this.buscando.AutoSize = true;
-      this.buscando.Location = new System.Drawing.Point(663, 218);
+      this.buscando.Location = new System.Drawing.Point(829, 204);
+      this.buscando.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.buscando.Name = "buscando";
-      this.buscando.Size = new System.Drawing.Size(151, 24);
+      this.buscando.Size = new System.Drawing.Size(115, 17);
       this.buscando.TabIndex = 17;
       this.buscando.Text = "Buscando dato...";
       // 
-      // btnAbrir
-      // 
-      this.btnAbrir.Location = new System.Drawing.Point(767, 489);
-      this.btnAbrir.Name = "btnAbrir";
-      this.btnAbrir.Size = new System.Drawing.Size(238, 65);
-      this.btnAbrir.TabIndex = 19;
-      this.btnAbrir.Text = "Abrir";
-      this.btnAbrir.UseVisualStyleBackColor = true;
-      this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click_1);
-      // 
       // form1
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(1064, 596);
-      this.Controls.Add(this.btnAbrir);
+      this.ClientSize = new System.Drawing.Size(1246, 613);
       this.Controls.Add(this.buscando);
       this.Controls.Add(this.button3);
       this.Controls.Add(this.txtSEP);
@@ -283,6 +245,7 @@
       this.Controls.Add(this.btnContar);
       this.Controls.Add(this.txtdato);
       this.Controls.Add(this.label1);
+      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.Name = "form1";
       this.Text = "Lista circular doble";
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -309,7 +272,6 @@
     private System.Windows.Forms.Button button3;
     private System.Windows.Forms.DataGridViewTextBoxColumn Lista;
     private System.Windows.Forms.Label buscando;
-    private System.Windows.Forms.Button btnAbrir;
   }
 }
 
