@@ -53,10 +53,9 @@
       // 
       this.label1.AutoSize = true;
       this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label1.Location = new System.Drawing.Point(19, 117);
-      this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+      this.label1.Location = new System.Drawing.Point(26, 176);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(101, 27);
+      this.label1.Size = new System.Drawing.Size(142, 37);
       this.label1.TabIndex = 0;
       this.label1.Text = "Nombre:";
       // 
@@ -64,10 +63,9 @@
       // 
       this.label2.AutoSize = true;
       this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label2.Location = new System.Drawing.Point(19, 225);
-      this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+      this.label2.Location = new System.Drawing.Point(26, 338);
       this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(67, 27);
+      this.label2.Size = new System.Drawing.Size(95, 37);
       this.label2.TabIndex = 1;
       this.label2.Text = "Edad:";
       // 
@@ -75,29 +73,26 @@
       // 
       this.label3.AutoSize = true;
       this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label3.Location = new System.Drawing.Point(19, 169);
-      this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+      this.label3.Location = new System.Drawing.Point(26, 254);
       this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(66, 27);
+      this.label3.Size = new System.Drawing.Size(91, 37);
       this.label3.TabIndex = 2;
       this.label3.Text = "Raza:";
       // 
       // txtNombre
       // 
       this.txtNombre.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txtNombre.Location = new System.Drawing.Point(162, 113);
-      this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.txtNombre.Location = new System.Drawing.Point(223, 170);
       this.txtNombre.Name = "txtNombre";
-      this.txtNombre.Size = new System.Drawing.Size(144, 34);
+      this.txtNombre.Size = new System.Drawing.Size(196, 44);
       this.txtNombre.TabIndex = 3;
       // 
       // txtEdad
       // 
       this.txtEdad.Font = new System.Drawing.Font("Microsoft YaHei", 11.8481F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txtEdad.Location = new System.Drawing.Point(162, 222);
-      this.txtEdad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.txtEdad.Location = new System.Drawing.Point(223, 333);
       this.txtEdad.Name = "txtEdad";
-      this.txtEdad.Size = new System.Drawing.Size(144, 34);
+      this.txtEdad.Size = new System.Drawing.Size(196, 44);
       this.txtEdad.TabIndex = 4;
       // 
       // cmbRaza
@@ -110,24 +105,21 @@
             "Dowerman",
             "Labrador",
             "Chihuahua"});
-      this.cmbRaza.Location = new System.Drawing.Point(162, 169);
-      this.cmbRaza.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.cmbRaza.Location = new System.Drawing.Point(223, 254);
       this.cmbRaza.Name = "cmbRaza";
-      this.cmbRaza.Size = new System.Drawing.Size(144, 35);
+      this.cmbRaza.Size = new System.Drawing.Size(196, 45);
       this.cmbRaza.TabIndex = 5;
       // 
       // dgvDatos
       // 
       this.dgvDatos.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
       this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dgvDatos.Location = new System.Drawing.Point(347, 49);
-      this.dgvDatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.dgvDatos.Location = new System.Drawing.Point(477, 74);
       this.dgvDatos.Name = "dgvDatos";
       this.dgvDatos.RowHeadersWidth = 67;
       this.dgvDatos.RowTemplate.Height = 30;
-      this.dgvDatos.Size = new System.Drawing.Size(755, 397);
+      this.dgvDatos.Size = new System.Drawing.Size(1038, 596);
       this.dgvDatos.TabIndex = 6;
-
       // 
       // toolStrip1
       // 
@@ -139,7 +131,8 @@
             this.tsmSalir});
       this.toolStrip1.Location = new System.Drawing.Point(0, 0);
       this.toolStrip1.Name = "toolStrip1";
-      this.toolStrip1.Size = new System.Drawing.Size(1112, 25);
+      this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+      this.toolStrip1.Size = new System.Drawing.Size(1529, 36);
       this.toolStrip1.TabIndex = 8;
       this.toolStrip1.Text = "toolStrip1";
       // 
@@ -147,28 +140,28 @@
       // 
       this.tslRegistrar.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
       this.tslRegistrar.Name = "tslRegistrar";
-      this.tslRegistrar.Size = new System.Drawing.Size(68, 22);
+      this.tslRegistrar.Size = new System.Drawing.Size(94, 30);
       this.tslRegistrar.Text = "Registrar";
       this.tslRegistrar.Click += new System.EventHandler(this.toolStripLabel1_Click);
       // 
       // tsmConsultar
       // 
       this.tsmConsultar.Name = "tsmConsultar";
-      this.tsmConsultar.Size = new System.Drawing.Size(71, 22);
+      this.tsmConsultar.Size = new System.Drawing.Size(101, 30);
       this.tsmConsultar.Text = "Consultar";
       this.tsmConsultar.Click += new System.EventHandler(this.tsmConsultar_Click);
       // 
       // tsmEliminar
       // 
       this.tsmEliminar.Name = "tsmEliminar";
-      this.tsmEliminar.Size = new System.Drawing.Size(63, 22);
+      this.tsmEliminar.Size = new System.Drawing.Size(87, 30);
       this.tsmEliminar.Text = "Eliminar";
       this.tsmEliminar.Click += new System.EventHandler(this.tsmEliminar_Click);
       // 
       // tsmSalir
       // 
       this.tsmSalir.Name = "tsmSalir";
-      this.tsmSalir.Size = new System.Drawing.Size(38, 22);
+      this.tsmSalir.Size = new System.Drawing.Size(52, 30);
       this.tsmSalir.Text = "Salir";
       this.tsmSalir.Click += new System.EventHandler(this.tsmSalir_Click);
       // 
@@ -178,28 +171,26 @@
       // 
       // Guardar
       // 
-      this.Guardar.Location = new System.Drawing.Point(75, 321);
-      this.Guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.Guardar.Location = new System.Drawing.Point(103, 482);
       this.Guardar.Name = "Guardar";
-      this.Guardar.Size = new System.Drawing.Size(99, 51);
+      this.Guardar.Size = new System.Drawing.Size(136, 76);
       this.Guardar.TabIndex = 9;
-      this.Guardar.Text = "Guardar y cargar";
+      this.Guardar.Text = "Guardar ";
       this.Guardar.UseVisualStyleBackColor = true;
       this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
       // 
       // txtSEP
       // 
-      this.txtSEP.Location = new System.Drawing.Point(202, 321);
-      this.txtSEP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.txtSEP.Location = new System.Drawing.Point(278, 482);
       this.txtSEP.Name = "txtSEP";
-      this.txtSEP.Size = new System.Drawing.Size(81, 22);
+      this.txtSEP.Size = new System.Drawing.Size(110, 29);
       this.txtSEP.TabIndex = 10;
       // 
       // FrmDatos
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(1112, 466);
+      this.ClientSize = new System.Drawing.Size(1529, 699);
       this.Controls.Add(this.txtSEP);
       this.Controls.Add(this.Guardar);
       this.Controls.Add(this.toolStrip1);
@@ -210,7 +201,6 @@
       this.Controls.Add(this.label3);
       this.Controls.Add(this.label2);
       this.Controls.Add(this.label1);
-      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.Name = "FrmDatos";
       this.Text = "ListaMascotas";
       this.Load += new System.EventHandler(this.FrmDatos_Load);
